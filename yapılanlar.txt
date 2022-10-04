@@ -44,3 +44,22 @@
 <h2>Adres</h2>
 <div>{address.title} {address.zip}</div>
 <button onClick={() => setAddress({...address,title: 'Ankara'})}>Change Adress</button>
+
+
+//useState
+
+import {  useState } from "react";
+import './App.css';
+import Counter from './components/Counter';
+
+
+
+
+function App() {
+  const [isVisible, setIsVisible] = useState(true);
+  return <div className='App'>
+  {isVisible ? <Counter /> : "Hatalı kulanım" }
+<br/>
+<button  onClick={() => setIsVisible(!isVisible)}> Toogle</button>
+  </div>
+  
