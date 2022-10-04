@@ -1,11 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
-import Header from './components/Header';
-import User from './components/User';
-import {useState} from 'react';
+ //Componentlerde kullanılan kodlar, Propslar
+ 
+ {/* <User 
+ name="Şeyma"  
+ surname ="Gündoğdu"  
+ isLoggedIn= {true}
+ age = {23} 
+ friends={['Ahmet' , 'Ayşe' , 'Fatma']}
+ address={{
+  title: "Ereğli/Zonguldak",
+  zip: 5
+ }}
+ /> */}
 
 
-function App() {
+
+ // yapılar , key value, usestate
   const [name,setName] = useState("Şeyma");
   const [age, setAge] = useState(23);
  const [friends, setFriends] = useState(["Feyza" , "Sudenur"]);
@@ -35,9 +44,3 @@ function App() {
 <h2>Adres</h2>
 <div>{address.title} {address.zip}</div>
 <button onClick={() => setAddress({...address,title: 'Ankara'})}>Change Adress</button>
-
- </>
-  );
-}
-
-export default App;
