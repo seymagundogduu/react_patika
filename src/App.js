@@ -1,12 +1,14 @@
-import './App.css';
-import Contacts from './proje/Contacts';
+import './ToDo/style.css';
+import ToDo from './ToDo';
+
+
 
 
 
 function App() {
 
   return <div className='App'>
-    <Contacts />
+  <ToDo/>
   
   </div>
   
