@@ -26,7 +26,7 @@ function Form({addContact, contacts}) {
         <div>   <input name="fullname" placeholder='fullname' value={form.fullname}  onChange={onChangeInput}/></div>
       
         <div>   <input name="phone_number"  placeholder='phonenumber' value={form.phone_number}  onChange={onChangeInput}/></div>
-        <div> <button onClick={onSubmit}>Add</button></div>
+        <div className='btn'> <button onClick={onSubmit}>Add</button></div>
 
     </div>
   )

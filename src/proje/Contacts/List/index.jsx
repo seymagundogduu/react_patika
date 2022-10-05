@@ -10,6 +10,12 @@ function List({contacts}) {
         );
     });
     console.log(filtered);
+
+    const span ={
+      color: 'red',
+
+
+    }
   return (
     <div>
         
@@ -20,10 +26,21 @@ function List({contacts}) {
          <ul className='list'> 
        {
          filtered.map((contact, i) => (
-            <li key={i}> {contact.fullname} {contact.phone_number}</li>
+            <li key={i}>
+              <span style={span}> İsim : </span>
+            
+             <span>{contact.fullname}</span>  
+             <span style={span}>Numara : </span>
+             <span  > {contact.phone_number}</span>
+               
+               </li>
          ))
         
-        }</ul></div>
+        }</ul>
+        <p>
+         Total contacts  ({filtered.length})
+        </p>
+        </div>
   )
 }
 
