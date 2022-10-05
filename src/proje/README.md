@@ -3,4 +3,4 @@
 ### My Profile : [https://app.patika.dev/symagn]
 
 
-<img src="src/proje/ekran.png" alt="proje">
+<img src="./ekran.png" alt="proje">
