@@ -1,5 +1,7 @@
+import A from './components/A';
+import B from './components/B';
 import './ToDo/style.css';
-import ToDo from './ToDo';
+
 
 
 
@@ -8,7 +10,8 @@ import ToDo from './ToDo';
 function App() {
 
   return <div className='App'>
-  <ToDo/>
+ <A> </A>
+ <B></B>
   
   </div>
   
