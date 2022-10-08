@@ -1,6 +1,7 @@
 import A from './components/A';
 import B from './components/B';
-import './ToDo/style.css';
+import './App.css';
+import Users from "./fetching/Users";
 
 
 
@@ -10,8 +11,8 @@ import './ToDo/style.css';
 function App() {
 
   return <div className='App'>
- <A> </A>
- <B></B>
+    <Users />
+
   
   </div>
   
