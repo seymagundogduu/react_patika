@@ -1,7 +1,7 @@
-import A from './components/A';
-import B from './components/B';
+
 import './App.css';
-import Users from "./fetching/Users";
+//import Users from "./fetching/Users";
+import Axios from './fetching/Axios';
 
 
 
@@ -11,7 +11,7 @@ import Users from "./fetching/Users";
 function App() {
 
   return <div className='App'>
-    <Users />
+    <Axios />
 
   
   </div>

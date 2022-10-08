@@ -2,14 +2,14 @@
 import axios from 'axios';
 import {useEffect, useState} from 'react'
 
-function Users() {
+function Axios() {
     const [users, setUsers] = useState([]);
     const [isLoading, setIsLoading] = useState(true);
 
     useEffect (() => {
        axios('https://jsonplaceholder.typicode.com/users')
      
-       .then((data) => setUsers(data))
+       .then((res) => setUsers(res.data))
        .catch((e) => console.log(e))
        .finally(() => setIsLoading(false))
     }, []);
@@ -26,4 +26,4 @@ function Users() {
   )
 }
 
-export default Users
+export default Axios
