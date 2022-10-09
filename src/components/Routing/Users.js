@@ -1,5 +1,5 @@
-import { Link } from 'react-router-dom'
-import {useEffect, useState} from "react";
+import { Link , Switch, Route} from 'react-router-dom'
+import {useEffect, useState, useRouteMatch } from "react";
 import axios from 'axios';
 
 function Users() {
@@ -29,6 +29,8 @@ function Users() {
         <li> <Link to="/user/2">User 2 </Link> </li>
         <li> <Link to="/user/3">User 3 </Link> </li> */}
       </ul>
+       {/* Bu kısım nesting ile ilgili  */}
+     
     </div>
   )
 }
