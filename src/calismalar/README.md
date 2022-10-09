@@ -7,4 +7,4 @@
 <img src= "./hatamesajlarıform.png" alt="hataform">
 
 ## Form Ekleme
-<img src= "./formislemleri.png" alt="form2">
+<img src= "./formeklentileri.png"  alt="form2">
