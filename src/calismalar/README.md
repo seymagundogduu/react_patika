@@ -1,4 +1,10 @@
 # My Profile : [https://app.patika.dev/symagn]
 
 ## Form İşlemleri
-<img src= "./formislemleri.png" alt="form">
+<img src= "./formislemleri.png" alt="form1">
+
+## Hatalı Form Eklemeleri
+<img src= "./hatamesajlarıform.png" alt="hataform">
+
+## Form Ekleme
+<img src= "./formislemleri.png" alt="form2">
