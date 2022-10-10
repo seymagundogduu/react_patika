@@ -1,17 +1,19 @@
-.App {
-  display: center;
- background-color: #282c34;
- min-height: 100vh;
- color: #fff;
- text-align: center;
- 
+.app{
+  height: 100vh;
 }
-label{
+
+
+
+.app.dark {
+ background-color: #282c34;
+ color: #fff;
+}
+/* label{
   display: block;
 }
 .error{
   color: red;
-}
+} */
 
 
  /* .App-logo {
