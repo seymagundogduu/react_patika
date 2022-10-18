@@ -1,22 +1,13 @@
-import "./App.css";
-import Container from "./context/components/Container";
-
-import { ThemeProvider } from "./context/ThemeContext";
-import { UserProvider } from "./context/UserContext";
-
-
 function App() {
  
 
   return (
-    <>
-      <ThemeProvider>
-        <UserProvider>
-      <Container />
-      </UserProvider>
-      </ThemeProvider>
+    <div className="App">
+  
+   
+   
     
-    </>
+    </div>
   );
 }
 export default App;
