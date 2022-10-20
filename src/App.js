@@ -1,15 +1,14 @@
-
-
-
 import react from "react"
-import Lang from "./language/Lang";
+import Counter from "./ReactTest/components/Counter";
+import ToDo from "./ReactTest/components/ToDo";
+
 
 function App() {
  
 
   return (
     <div className="App"> 
-   <Lang />
+    <ToDo/>
     </div>
   );
 }
