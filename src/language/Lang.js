@@ -5,21 +5,29 @@ import {IntlProvider, FormattedMessage, FormattedNumber} from "react-intl"
 const messages = {
  "tr-TR" : {
  title: "Selam Türkçe",
- description:"3 yeni mesajınız var"
+ description:"{count} yeni mesajınız var"
  },
 
  "en-US":{
  title: "Hello Turkey",
- description: "you have 3 new message"
+ description: "you have {count} new message"
  }
 }
 
-function App() {
+function Lang() {
+  const isLocale = localStorage.getItem("locale");
+  const defaultLocale = isLocale ? isLocale : navigator.language; // tarayıcının dilini tanımlar
+  console.log(defaultLocale);
   const [lang, setLang] = useState("tr-TR");
+
+
+  useEffect(() => {
+       localStorage.setItem('locale' , lang)
+  },[lang])
 
   return (
     <div className="App"> 
-    <IntlProvider  messages={messages[lang]}>
+    <IntlProvider locale={lang} messages={messages[lang]}>
      
 
       <FormattedMessage
@@ -27,7 +35,7 @@ function App() {
 
           <p>
           <FormattedMessage
-          id="description" />
+          id="description"  values={{ count: 3}} />
           </p>
             <br/>
           <button onClick={() => setLang("tr-TR")}>TR</button>
@@ -38,4 +46,4 @@ function App() {
     </div>
   );
 }
-export default App;
+export default Lang;
